@@ -7,7 +7,8 @@ client.on('ready', () => {
   console.log('---------------')
 });
 
-client.login('NTA2MTcwNjc3NDYwNTk4Nzg0.DreQRg.FKgeHIUSwY-n5CFH88BhIYFOv0o');
+client.login('NTA2MTc1NTg5MjM3OTE1NjQ4.DreUZw.SO3XXCPQhOUq73GM7HCahPQygGs');
+
 const adminprefix = "$";
 const devs = ['430860058591756289','416204694218866688'];
 client.on('message', message => {
@@ -32,6 +33,7 @@ if (message.content.startsWith(adminprefix + 'setT')) {
     message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
 }
 });
+
 client.on('message' , async (message) => {
        if(message.content.startsWith(`<@${client.user.id}>`)) {
               message.channel.startTyping()
@@ -53,8 +55,9 @@ client.on('message' , async (message) => {
        }
   
 });
+
 client.on('message', message => {
-        var prefix = "$";
+        var prefix = "+";
               if(!message.channel.guild) return;
     if(message.content.startsWith(prefix + 'bc')) {
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
